@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Garikapati Bhavana | CSE (AI & ML)</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #141E30, #243B55);
+    color: #ffffff;
+}
+
+header {
+    padding: 30px;
+    position: relative;
+    animation: fadeDown 1.2s ease forwards;
+}
+
+header h1 {
+    font-size: 44px;
+    color: #FFD369;
+}
+
+header span {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    font-size: 16px;
+    color: #EAEAEA;
+}
+
+/* MAIN LAYOUT */
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+/* SECTIONS */
+.left, .center, .right {
+    opacity: 0;
+}
+
+.left {
+    width: 30%;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.center {
+    width: 35%;
+    text-align: center;
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 15px;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 1.4s;
+}
+
+.right {
+    width: 30%;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 2.2s;
+}
+
+/* PROFILE PHOTO */
+.profile-photo {
+    margin-bottom: 20px;
+    animation: fadeUp 1.5s ease forwards;
+}
+
+.profile-photo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #FFD369;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255,211,105,0.6);
+}
+
+/* CONTENT */
+h2 {
+    color: #FFD369;
+    border-bottom: 2px solid #FFD369;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.card {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 12px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #ccc;
+    animation: fadeUp 1.5s ease forwards;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+    from {opacity: 0; transform: translateY(-40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes slideLeft {
+    from {opacity: 0; transform: translateX(-60px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes slideRight {
+    from {opacity: 0; transform: translateX(60px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes zoomIn {
+    from {opacity: 0; transform: scale(0.8);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Soft Audio -->
+<audio autoplay>
+    <source src="https://www.soundjay.com/buttons/sounds/button-09.mp3" type="audio/mpeg">
+</audio>
+
+<header>
+    <h1>Garikapati Bhavana</h1>
+    <span>Professional CSE (AI & ML) Student</span>
+</header>
+
+<div class="main">
+
+    <!-- LEFT -->
+    <div class="left">
+        <h2>Qualifications</h2>
+        <div class="card">
+            <ul>
+                <li>B.Tech – CSE (Artificial Intelligence & Machine Learning)</li>
+                <li>Strong foundation in AI & ML concepts</li>
+                <li>Hands-on experience with Python & ML models</li>
+            </ul>
+        </div>
+
+        <h2>Experience</h2>
+        <div class="card">
+            <ul>
+                <li>Academic AI & ML mini projects</li>
+                <li>Worked with real-world datasets</li>
+                <li>Model training and evaluation</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="center">
+
+        <div class="profile-photo">
+            <img src="profile.jpeg" alt="Profile Photo">
+        </div>
+
+        <h2>Profile</h2>
+        <div class="card">
+            <p><b>Email:</b>garikapatibhavana12@gmail.com</p>
+            <p><b>Phone:</b> +91 8688638563</p>
+            <p><b>Address:</b> Andhra Pradesh, India</p>
+            <p><b>Gender:</b> Female</p>
+        </div>
+
+        <div class="card">
+            <p>
+                I am a motivated and passionate CSE (AI & ML) student with a strong
+                interest in Artificial Intelligence, Machine Learning, and data-driven
+                technologies. I aspire to contribute innovative solutions to real-world
+                problems through intelligent systems.
+            </p>
+        </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+        <h2>Skills</h2>
+        <div class="card">
+            <ul>
+                <li>Python, Java (Basics)</li>
+                <li>Machine Learning Algorithms</li>
+                <li>Data Analysis & Visualization</li>
+                <li>HTML & CSS</li>
+            </ul>
+        </div>
+
+        <h2>Languages</h2>
+        <div class="card">
+            <ul>
+                <li>English</li>
+                <li>Telugu</li>
+                <li>Hindi (Basic)</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 | Garikapati Bhavana | CSE (AI & ML) Portfolio
+</footer>
+
+</body>
+</html>
